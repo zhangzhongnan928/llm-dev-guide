@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/llm-dev-guide/static/css/main.727f3337.css",
+    "main.js": "/llm-dev-guide/static/js/main.81147662.js",
+    "index.html": "/llm-dev-guide/index.html",
+    "main.727f3337.css.map": "/llm-dev-guide/static/css/main.727f3337.css.map",
+    "main.81147662.js.map": "/llm-dev-guide/static/js/main.81147662.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.727f3337.css",
+    "static/js/main.81147662.js"
+  ]
+}
