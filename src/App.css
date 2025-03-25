@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f8fa;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #ffffff;
+  border-right: 1px solid #e1e4e8;
+  padding: 20px 0;
+  position: fixed;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.sidebar h1 {
+  font-size: 18px;
+  padding: 0 20px 20px;
+  color: #24292e;
+  border-bottom: 1px solid #e1e4e8;
+  margin-bottom: 20px;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-item {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border-left: 3px solid transparent;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item.active {
+  background-color: #f1f8ff;
+  border-left-color: #0366d6;
+  font-weight: 500;
+}
+
+.nav-item:hover:not(.active) {
+  background-color: #f6f8fa;
+}
+
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: #e1e4e8;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.nav-item.active .step-number {
+  background-color: #0366d6;
+  color: white;
+}
+
+.content {
+  margin-left: 250px;
+  padding: 30px;
+  width: calc(100% - 250px);
+}
+
+.step-content {
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+.step-header {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e1e4e8;
+}
+
+.step-header h2 {
+  font-size: 24px;
+  color: #24292e;
+  margin-bottom: 5px;
+}
+
+.step-header p {
+  color: #586069;
+}
+
+.step-section {
+  margin-bottom: 25px;
+}
+
+.step-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #24292e;
+}
+
+.step-section p {
+  margin-bottom: 15px;
+}
+
+.input-area {
+  margin-bottom: 20px;
+}
+
+.input-area label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.input-area textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  border: 1px solid #e1e4e8;
+  border-radius: 3px;
+  resize: vertical;
+  font-family: inherit;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.update-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.update-btn:hover {
+  background-color: #218838;
+}
+
+.prompt-template {
+  background-color: #f6f8fa;
+  border: 1px solid #e1e4e8;
+  border-radius: 3px;
+  padding: 15px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.prompt-template pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 14px;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #0366d6;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.copy-btn:hover {
+  background-color: #0256b9;
+}
+
+.next-actions {
+  background-color: #f8f9fa;
+  border-left: 4px solid #0366d6;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.next-actions h4 {
+  margin-bottom: 10px;
+  color: #24292e;
+}
+
+.next-actions ul {
+  margin-left: 20px;
+}
+
+.next-actions li {
+  margin-bottom: 5px;
+}
+
+.faq-section {
+  background-color: #fffbdd;
+  border: 1px solid #ffe58f;
+  border-radius: 3px;
+  padding: 15px;
+}
+
+.faq-section h4 {
+  margin-bottom: 10px;
+  color: #735c0f;
+}
+
+.faq-list {
+  margin-left: 20px;
+}
+
+.faq-list li {
+  margin-bottom: 10px;
+}
+
+.navigation-btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.nav-btn {
+  background-color: #0366d6;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.nav-btn:hover {
+  background-color: #0256b9;
+}
+
+.nav-btn:disabled {
+  background-color: #e1e4e8;
+  cursor: not-allowed;
+}
+
+.alert {
+  padding: 10px 15px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.alert-success {
+  background-color: #e6ffed;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+}
+
+.alert-info {
+  background-color: #f1f8ff;
+  border: 1px solid #c8e1ff;
+  color: #0366d6;
+}
