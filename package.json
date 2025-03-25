@@ -2,7 +2,7 @@
   "name": "llm-dev-guide",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://YOUR_USERNAME.github.io/llm-dev-guide",
+  "homepage": "https://zhangzhongnan928.github.io/llm-dev-guide",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
